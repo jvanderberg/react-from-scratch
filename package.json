@@ -7,8 +7,8 @@
     "watch-js": "node_modules/.bin/watchify src/js/App.js --debug  -t babelify -v  --outfile build/app.js",
     "watch-html": "node_modules/.bin/watchy -w src/html -- cp src/html/* ./build",
     "server": "node_modules/.bin/http-server ./build -s -c-1 -p 8888",
-    "dev": "mkdir build & npm run watch-js & npm run watch-html & npm run server",
-    "build" : "mkdir build & node_modules/.bin/browserify src/js/App.js -t babelify -g uglifyify -o build/app.js  & cp src/html/* ./build"
+    "dev": "npm run watch-js & npm run watch-html & npm run server",
+    "build" : "node_modules/.bin/browserify src/js/App.js -t babelify -g uglifyify -o build/app.js  & cp src/html/* ./build"
   },
   "author": "",
   "license": "ISC",

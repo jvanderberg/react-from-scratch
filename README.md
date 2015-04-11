@@ -25,8 +25,8 @@ A simple React shell that contains all you need to run and build a basic React p
 7. Uglifify - Uglify plugin for Browserify.
 
 #npm scripts
-*watch-js - Uses watchify to watch for changes in App.js and dependencies and build a dev build with source maps.
-*watch-html - Uses watchy to watch the /html directory and deploy it when there are chances.
-*server - Launch an http server pointed to /build.
-*dev - Run watch-js & watch-html & server.
-*build - Use browserify to build and deploy and uglified build.
+- watch-js - Uses watchify to watch for changes in App.js and dependencies and build a dev build with source maps.
+- watch-html - Uses watchy to watch the /html directory and deploy it when there are chances.
+- server - Launch an http server pointed to /build.
+- dev - Run watch-js & watch-html & server.
+- build - Use browserify to build and deploy and uglified build.

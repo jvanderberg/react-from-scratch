@@ -3,7 +3,7 @@ React 0.13 + Babel (ES6/JSX) + Browserify
 
 #React From Scratch
 
-A simple React shell that contains all you need to run and build a basic React project.
+A simple React shell that contains all you need to run and build a basic React project.  The project uses nothing more than npm package.json scripts and various command line node modules to build and deploy.
 
 #Installing and Dev Usage
 1. Clone the repository and run 'npm install' in the root.
@@ -23,3 +23,10 @@ A simple React shell that contains all you need to run and build a basic React p
 5. http-server - Simple web server that serves /build.
 6. React 0.13 - React with support for ES6 style classes.
 7. Uglifify - Uglify plugin for Browserify.
+
+#npm scripts
+*watch-js - Uses watchify to watch for changes in App.js and dependencies and build a dev build with source maps.
+*watch-html - Uses watchy to watch the /html directory and deploy it when there are chances.
+*server - Launch an http server pointed to /build.
+*dev - Run watch-js & watch-html & server.
+*build - Use browserify to build and deploy and uglified build.

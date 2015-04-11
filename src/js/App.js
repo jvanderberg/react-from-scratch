@@ -1,16 +1,15 @@
 "use strict";
 import React from 'react';
-import Hello from './hello.js';
+import Hello from './Hello.js';
 
 function render(dummy) {
 	React.render(
-		<Hello/>,
+		<Hello headerMessage="Hello World"/>,
 		document.getElementById('content')
 	);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-	window.addEventListener('resize', render);
 	render();
 });
 
